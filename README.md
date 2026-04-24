@@ -38,7 +38,7 @@ The platform is designed to answer one question for a first-time used car buyer:
 
 ## 🏗️ Architecture
 
-![AutoTrust Architecture](AutoTrust Project/AutoTrust/docs/architecture.png)
+![AutoTrust Architecture](AutoTrust Project/AutoTrust/docs/architecture.svg)
 
 ### Pipeline flow
 
