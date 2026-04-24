@@ -1,0 +1,186 @@
+<svg viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="900" height="580" fill="#F8FAFB" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A1A2E">AutoTrust — Vehicle Reliability Intelligence Platform</text>
+  <text x="450" y="58" text-anchor="middle" font-size="12" fill="#666">End-to-end data pipeline · Microsoft Fabric · PySpark · Delta Lake · Power BI</text>
+
+  <!-- ── DATA SOURCES ── -->
+  <rect x="30" y="90" width="160" height="30" rx="6" fill="#1A1A2E"/>
+  <text x="110" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Data Sources</text>
+
+  <!-- NHTSA -->
+  <rect x="30" y="132" width="160" height="60" rx="8" fill="white" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="110" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#085041">NHTSA API</text>
+  <text x="110" y="173" text-anchor="middle" font-size="10" fill="#666">Complaints · Recalls</text>
+  <text x="110" y="185" text-anchor="middle" font-size="10" fill="#666">Live API call</text>
+
+  <!-- Kaggle -->
+  <rect x="30" y="206" width="160" height="60" rx="8" fill="white" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="110" y="231" text-anchor="middle" font-size="12" font-weight="bold" fill="#085041">Kaggle Dataset</text>
+  <text x="110" y="247" text-anchor="middle" font-size="10" fill="#666">Vehicle reliability</text>
+  <text x="110" y="259" text-anchor="middle" font-size="10" fill="#666">survey data</text>
+
+  <!-- RepairPal -->
+  <rect x="30" y="280" width="160" height="60" rx="8" fill="white" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="110" y="305" text-anchor="middle" font-size="12" font-weight="bold" fill="#085041">RepairPal</text>
+  <text x="110" y="321" text-anchor="middle" font-size="10" fill="#666">Maintenance costs</text>
+  <text x="110" y="333" text-anchor="middle" font-size="10" fill="#666">Excel file</text>
+
+  <!-- Arrows to Bronze -->
+  <line x1="192" y1="162" x2="238" y2="200" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <line x1="192" y1="236" x2="238" y2="236" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <line x1="192" y1="310" x2="238" y2="272" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+
+  <!-- ── BRONZE ── -->
+  <rect x="240" y="90" width="150" height="30" rx="6" fill="#CD7F32"/>
+  <text x="315" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Bronze Layer</text>
+
+  <rect x="240" y="132" width="150" height="200" rx="8" fill="white" stroke="#CD7F32" stroke-width="1.5"/>
+  <text x="315" y="158" text-anchor="middle" font-size="11" font-weight="bold" fill="#7A4C00">Raw ingestion</text>
+  <line x1="252" y1="165" x2="378" y2="165" stroke="#F0E0C0" stroke-width="0.8"/>
+  <text x="315" y="183" text-anchor="middle" font-size="10" fill="#555">complaints</text>
+  <text x="315" y="200" text-anchor="middle" font-size="10" fill="#555">recalls</text>
+  <text x="315" y="217" text-anchor="middle" font-size="10" fill="#555">maintenance_data</text>
+  <text x="315" y="234" text-anchor="middle" font-size="10" fill="#555">vehicle_images</text>
+  <text x="315" y="251" text-anchor="middle" font-size="10" fill="#555">logos</text>
+  <line x1="252" y1="262" x2="378" y2="262" stroke="#F0E0C0" stroke-width="0.8"/>
+  <text x="315" y="279" text-anchor="middle" font-size="10" fill="#888" font-style="italic">Standardise +</text>
+  <text x="315" y="294" text-anchor="middle" font-size="10" fill="#888" font-style="italic">quality checks</text>
+  <text x="315" y="309" text-anchor="middle" font-size="10" fill="#888" font-style="italic">2 notebooks</text>
+
+  <!-- Arrow Bronze to Silver -->
+  <line x1="392" y1="236" x2="428" y2="236" stroke="#C0C0C0" stroke-width="2" marker-end="url(#arrow-gray)"/>
+  <text x="410" y="228" text-anchor="middle" font-size="9" fill="#888">Delta</text>
+
+  <!-- ── SILVER ── -->
+  <rect x="430" y="90" width="150" height="30" rx="6" fill="#7F7F7F"/>
+  <text x="505" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Silver Layer</text>
+
+  <rect x="430" y="132" width="150" height="200" rx="8" fill="white" stroke="#7F7F7F" stroke-width="1.5"/>
+  <text x="505" y="158" text-anchor="middle" font-size="11" font-weight="bold" fill="#444">Cleaned + enriched</text>
+  <line x1="442" y1="165" x2="568" y2="165" stroke="#E0E0E0" stroke-width="0.8"/>
+  <text x="505" y="183" text-anchor="middle" font-size="10" fill="#555">silver_complaints</text>
+  <text x="505" y="200" text-anchor="middle" font-size="10" fill="#555">silver_recalls</text>
+  <text x="505" y="217" text-anchor="middle" font-size="10" fill="#555">silver_maintenance</text>
+  <text x="505" y="234" text-anchor="middle" font-size="10" fill="#555">silver_logos</text>
+  <text x="505" y="251" text-anchor="middle" font-size="10" fill="#555">silver_vehicle_images</text>
+  <line x1="442" y1="262" x2="568" y2="262" stroke="#E0E0E0" stroke-width="0.8"/>
+  <text x="505" y="279" text-anchor="middle" font-size="10" fill="#888" font-style="italic">Normalise · join ·</text>
+  <text x="505" y="294" text-anchor="middle" font-size="10" fill="#888" font-style="italic">validate schema</text>
+  <text x="505" y="309" text-anchor="middle" font-size="10" fill="#888" font-style="italic">1 notebook</text>
+
+  <!-- Arrow Silver to Gold -->
+  <line x1="582" y1="236" x2="618" y2="236" stroke="#FFD700" stroke-width="2" marker-end="url(#arrow-gold)"/>
+  <text x="600" y="228" text-anchor="middle" font-size="9" fill="#888">Delta</text>
+
+  <!-- ── GOLD ── -->
+  <rect x="620" y="90" width="250" height="30" rx="6" fill="#B8860B"/>
+  <text x="745" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Gold Layer — Star Schema</text>
+
+  <rect x="620" y="132" width="250" height="200" rx="8" fill="white" stroke="#B8860B" stroke-width="1.5"/>
+
+  <!-- Fact table -->
+  <rect x="680" y="148" width="130" height="52" rx="6" fill="#FFF8E7" stroke="#B8860B" stroke-width="1"/>
+  <text x="745" y="167" text-anchor="middle" font-size="10" font-weight="bold" fill="#7A5800">FACT</text>
+  <text x="745" y="181" text-anchor="middle" font-size="10" fill="#555">fact_vehicle_reliability</text>
+  <text x="745" y="194" text-anchor="middle" font-size="9" fill="#888">442 models · 1,314 rows</text>
+
+  <!-- Dim tables -->
+  <rect x="632" y="218" width="108" height="42" rx="6" fill="#F0F8FF" stroke="#378ADD" stroke-width="1"/>
+  <text x="686" y="234" text-anchor="middle" font-size="9" font-weight="bold" fill="#185FA5">DIM</text>
+  <text x="686" y="247" text-anchor="middle" font-size="9" fill="#555">dim_make</text>
+  <text x="686" y="258" text-anchor="middle" font-size="9" fill="#888">13 brands</text>
+
+  <rect x="750" y="218" width="108" height="42" rx="6" fill="#F0F8FF" stroke="#378ADD" stroke-width="1"/>
+  <text x="804" y="234" text-anchor="middle" font-size="9" font-weight="bold" fill="#185FA5">DIM</text>
+  <text x="804" y="247" text-anchor="middle" font-size="9" fill="#555">dim_vehicle</text>
+  <text x="804" y="258" text-anchor="middle" font-size="9" fill="#888">77 vehicles</text>
+
+  <rect x="632" y="272" width="108" height="42" rx="6" fill="#F0F8FF" stroke="#378ADD" stroke-width="1"/>
+  <text x="686" y="288" text-anchor="middle" font-size="9" font-weight="bold" fill="#185FA5">DIM</text>
+  <text x="686" y="301" text-anchor="middle" font-size="9" fill="#555">dim_failure_cat</text>
+  <text x="686" y="312" text-anchor="middle" font-size="9" fill="#888">11 categories</text>
+
+  <rect x="750" y="272" width="108" height="42" rx="6" fill="#F5F0FF" stroke="#7F77DD" stroke-width="1"/>
+  <text x="804" y="288" text-anchor="middle" font-size="9" font-weight="bold" fill="#3C3489">SILVER</text>
+  <text x="804" y="301" text-anchor="middle" font-size="9" fill="#555">silver_logos</text>
+  <text x="804" y="312" text-anchor="middle" font-size="9" fill="#888">image URLs</text>
+
+  <!-- Relationship lines inside Gold -->
+  <line x1="745" y1="200" x2="686" y2="218" stroke="#B8860B" stroke-width="0.8" stroke-dasharray="3 2"/>
+  <line x1="745" y1="200" x2="804" y2="218" stroke="#B8860B" stroke-width="0.8" stroke-dasharray="3 2"/>
+  <line x1="686" y1="218" x2="686" y2="272" stroke="#B8860B" stroke-width="0.8" stroke-dasharray="3 2"/>
+
+  <!-- ── POWER BI ── -->
+  <rect x="240" y="390" width="630" height="30" rx="6" fill="#F2C811"/>
+  <text x="555" y="410" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A2E">Power BI Report — Direct Lake mode</text>
+
+  <rect x="240" y="432" width="148" height="70" rx="8" fill="white" stroke="#F2C811" stroke-width="1.5"/>
+  <text x="314" y="454" text-anchor="middle" font-size="10" font-weight="bold" fill="#7A6200">Overview</text>
+  <text x="314" y="470" text-anchor="middle" font-size="9" fill="#666">Vehicle profile</text>
+  <text x="314" y="484" text-anchor="middle" font-size="9" fill="#666">Image · scores · verdict</text>
+  <text x="314" y="496" text-anchor="middle" font-size="9" fill="#666">Similar vehicles</text>
+
+  <rect x="398" y="432" width="148" height="70" rx="8" fill="white" stroke="#F2C811" stroke-width="1.5"/>
+  <text x="472" y="454" text-anchor="middle" font-size="10" font-weight="bold" fill="#7A6200">Brand Reliability</text>
+  <text x="472" y="470" text-anchor="middle" font-size="9" fill="#666">Bar chart · radar</text>
+  <text x="472" y="484" text-anchor="middle" font-size="9" fill="#666">Treemap · brand table</text>
+  <text x="472" y="496" text-anchor="middle" font-size="9" fill="#666">13 brands compared</text>
+
+  <rect x="556" y="432" width="148" height="70" rx="8" fill="white" stroke="#F2C811" stroke-width="1.5"/>
+  <text x="630" y="454" text-anchor="middle" font-size="10" font-weight="bold" fill="#7A6200">Model Ranking</text>
+  <text x="630" y="470" text-anchor="middle" font-size="9" fill="#666">Scatter · top 10 table</text>
+  <text x="630" y="484" text-anchor="middle" font-size="9" fill="#666">Score trend line</text>
+  <text x="630" y="496" text-anchor="middle" font-size="9" fill="#666">442 models scored</text>
+
+  <rect x="714" y="432" width="156" height="70" rx="8" fill="white" stroke="#F2C811" stroke-width="1.5"/>
+  <text x="792" y="454" text-anchor="middle" font-size="10" font-weight="bold" fill="#7A6200">Failure Analysis</text>
+  <text x="792" y="470" text-anchor="middle" font-size="9" fill="#666">Heatmap · donut</text>
+  <text x="792" y="484" text-anchor="middle" font-size="9" fill="#666">Brand × component</text>
+  <text x="792" y="496" text-anchor="middle" font-size="9" fill="#666">11 failure categories</text>
+
+  <!-- Arrow Gold to Power BI -->
+  <line x1="745" y1="334" x2="745" y2="388" stroke="#F2C811" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  <text x="760" y="368" font-size="9" fill="#888">Direct Lake</text>
+
+  <!-- ── PIPELINE ── -->
+  <rect x="30" y="390" width="190" height="112" rx="8" fill="white" stroke="#7F77DD" stroke-width="1.5"/>
+  <rect x="30" y="390" width="190" height="28" rx="8" fill="#7F77DD"/>
+  <rect x="30" y="406" width="190" height="12" rx="0" fill="#7F77DD"/>
+  <text x="125" y="408" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Fabric Data Pipeline</text>
+  <text x="125" y="428" text-anchor="middle" font-size="10" fill="#3C3489">AutoTrust_Daily_Pipeline</text>
+  <text x="125" y="446" text-anchor="middle" font-size="9" fill="#666">Schedule: Daily 00:00 UTC</text>
+  <text x="125" y="462" text-anchor="middle" font-size="9" fill="#666">Bronze Ingestion → Bronze</text>
+  <text x="125" y="478" text-anchor="middle" font-size="9" fill="#666">→ Silver → Gold → Monitor</text>
+  <text x="125" y="494" text-anchor="middle" font-size="9" fill="#555">pipeline_run_log tracking</text>
+
+  <!-- Arrow Pipeline to Bronze -->
+  <line x1="220" y1="446" x2="238" y2="236" stroke="#7F77DD" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow-purple)"/>
+
+  <!-- ── TECH STACK FOOTER ── -->
+  <rect x="30" y="528" width="840" height="36" rx="6" fill="#1A1A2E"/>
+  <text x="450" y="550" text-anchor="middle" font-size="11" fill="white">Microsoft Fabric · Apache Spark · PySpark · Delta Lake · Power BI DAX · NHTSA API · Python · GitHub</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#C0C0C0" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+    <marker id="arrow-yellow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#F2C811" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#7F77DD" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+  </defs>
+
+</svg>
