@@ -38,7 +38,7 @@ The platform is designed to answer one question for a first-time used car buyer:
 
 ## 🏗️ Architecture
 
-![AutoTrust Architecture](AutoTrust Project/AutoTrust/docs/architecture.svg)
+![AutoTrust Architecture](docs/architecture.svg)
 
 ### Pipeline flow
 
@@ -141,7 +141,7 @@ The project includes a fully automated Fabric Data Pipeline (`AutoTrust_Daily_Pi
 
 ### Pipeline canvas
 
-![Pipeline Canvas](screenshots/pipeline.png)
+![Pipeline Canvas](Screenshots/pipeline.png)
 
 ### Execution flow
 
