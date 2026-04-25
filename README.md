@@ -72,15 +72,15 @@ RepairPal Excel ───────────────┘
 
 | Overview | Brand Reliability |
 |---|---|
-| ![Overview](screenshots/overview.png) | ![Brand Reliability](screenshots/brand_reliability.png) |
+| ![Overview](screenshots/Overview.png) | ![Brand Reliability](screenshots/brand_reliability.png) |
 
 | Model Ranking | Failure Analysis |
 |---|---|
-| ![Model Ranking](screenshots/model_ranking.png) | ![Failure Analysis](screenshots/failure_analysis.png) |
+| ![Model Ranking](screenshots/Model_ranking.png) | ![Failure Analysis](screenshots/Failure_analysis.png) |
 
 | Buyer Recommendations | Pipeline Canvas |
 |---|---|
-| ![Buyer Recommendations](screenshots/buyer_recommendations.png) | ![Pipeline](screenshots/pipeline.png) |
+| ![Buyer Recommendation](screenshots/Recommendation.png) | ![Pipeline](screenshots/Pipeline.png) |
 
 ---
 
@@ -141,7 +141,7 @@ The project includes a fully automated Fabric Data Pipeline (`AutoTrust_Daily_Pi
 
 ### Pipeline canvas
 
-![Pipeline Canvas](Screenshots/pipeline.png)
+![Pipeline Canvas](Screenshots/Pipeline.png)
 
 ### Execution flow
 
