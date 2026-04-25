@@ -72,15 +72,15 @@ RepairPal Excel ───────────────┘
 
 | Overview | Brand Reliability |
 |---|---|
-| ![Overview](screenshots/Overview.png) | ![Brand Reliability](screenshots/brand_reliability.png) |
+| ![Overview](Screenshots/Overview.PNG) | ![Brand Reliability](Screenshots/Brand_reliabillity.PNG) |
 
 | Model Ranking | Failure Analysis |
 |---|---|
-| ![Model Ranking](screenshots/Model_ranking.png) | ![Failure Analysis](screenshots/Failure_analysis.png) |
+| ![Model Ranking](Screenshots/Model_ranking.PNG) | ![Failure Analysis](Screenshots/Failure_analysis.PNG) |
 
 | Buyer Recommendations | Pipeline Canvas |
 |---|---|
-| ![Buyer Recommendation](screenshots/Recommendation.png) | ![Pipeline](screenshots/Pipeline.png) |
+| ![Buyer Recommendation](Screenshots/Recommendation.PNG) | ![Pipeline](Screenshots/pipeline.png) |
 
 ---
 
