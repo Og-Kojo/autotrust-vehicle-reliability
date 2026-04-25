@@ -141,7 +141,7 @@ The project includes a fully automated Fabric Data Pipeline (`AutoTrust_Daily_Pi
 
 ### Pipeline canvas
 
-![Pipeline Canvas](Screenshots/Pipeline.png)
+![Pipeline Canvas](Screenshots/pipeline.png)
 
 ### Execution flow
 
