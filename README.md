@@ -15,7 +15,7 @@ End-to-end vehicle reliability intelligence platform built on Microsoft Fabric �
 
 ## 🔗 Live Report
 
-**[View the AutoTrust Power BI Dashboard →](https://app.powerbi.com/groups/fc79ea79-11ab-44fc-8670-6b755ea261d0/reports/c62a5c44-5dc3-412d-bcaa-8a271e82fbc2/b413e89100d0036c5e4c?experience=power-bi)**
+**[View the AutoTrust Power BI Dashboard →](https://app.powerbi.com/view?r=eyJrIjoiOGI1ZDMzMDMtNDY5My00ZWNkLWFmNWYtMzE1ZmNkMzIyYWY4IiwidCI6IjAxZDA3YzY1LTM2OTMtNGZhZi1hNGUyLTM5YTA5MzY3NmE4OCJ9)**
 
 ---
 
